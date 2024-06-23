@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="stylesheet"
+			href="https://github.com/sindresorhus/modern-normalize/blob/main/modern-normalize.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/styles.css" />
+		<!-- librariile pt prefix tara -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css"
+		/>
+		<title>Simply Chocolate</title>
+	</head>
+	<body>
+		<main>
+			<section class="container top-sellers-section">
+				<h2><span>tOp</span>&nbsp;Sellers</h2>
+				<div class="top-sellers-section-cards">
+					<div class="top-sellers-card">
+						<picture
+							><source
+								media="min-width:375px"
+								srcset="
+									./images/tops_img_1_m.png,
+									./images/tops_img_1_m_2x.png
+								" />
+							<source
+								media="min-width:768px"
+								srcset="
+									./images/tops_img_1_t.png,
+									./images/tops_img_1_t_2x.png
+								" />
+							<source
+								media="min-width:1200px"
+								srcset="
+									./images/tops_img_1_d.png,
+									./images/tops_img_1_d_2x.png
+								" />
+							<img
+								src="./images/tops_img_1_m.png"
+								alt="top sellers description 1"
+						/></picture>
+						<p>
+							Crazy enough chocolate originates from a bean just like the coffee
+							bean called Cacao. Cacao has been around for thousands of years
+							and was first discovered by the Native American tribe called the
+							Mayans.
+						</p>
+					</div>
+					<div class="top-sellers-card">
+						<picture>
+							<source
+								media="min-width:1200px"
+								srcset="
+									./images/tops_img_3_d.png,
+									./images/tops_img_3_d_2x.png
+								" />
+							<img
+								src="./images/tops_img_3_d.png"
+								alt="top sellers description 2"
+						/></picture>
+					</div>
+					<div class="top-sellers-card">
+						<picture
+							><source
+								media="min-width:375px"
+								srcset="
+									./images/tops_img_2_m.png,
+									./images/tops_img_2_m_2x.png
+								" />
+							<source
+								media="min-width:768px"
+								srcset="
+									./images/tops_img_2_t.png,
+									./images/tops_img_2_t_2x.png.
+								" />
+							<source
+								media="min-width:1200px"
+								srcset="
+									./images/tops_img_2_d.png,
+									./images/tops_img_2_d_2x.png
+								" />
+							<img
+								src="./images/tops_img_2_m.png"
+								alt="top sellers description 2"
+						/></picture>
+						<button class="button" type="button" data-modal-open="#modal">
+							Buy now
+						</button>
+					</div>
+				</div>
+				<div class="backdrop is-hidden" data-modal>
+					<div class="modal">
+						<button type="button" class="close-button" data-modal-close>
+							<svg>
+								<use
+									href="./images/icons.svg/symbol-defs.svg#icon-close-button"
+								></use>
+							</svg>
+						</button>
+						<form class="modal-form">
+							<p><span>bUY</span>&nbsp;nOW</p>
+							<div class="form-field">
+								<div class="sortiment-weight">
+									<picture
+										><source
+											media="min-width:375px"
+											srcset="
+												./images/first_sortiment.png,
+												./images/first_sortiment_2x.png
+											" />
+										<img
+											src="./images/first_sortiment.png"
+											alt="first sortiment"
+									/></picture>
+									<button>100 g</button>
+								</div>
+								<div class="sortiment-weight">
+									<picture
+										><source
+											media="min-width:375px"
+											srcset="
+												./images/second_sortiment.png,
+												./images/second_sortiment_2x.png
+											" />
+										<img
+											src="./images/second_sortiment.png"
+											alt="first sortiment"
+									/></picture>
+									<button>200 g</button>
+								</div>
+								<div class="sortiment-weight">
+									<picture
+										><source
+											media="min-width:375px"
+											srcset="
+												./images/third_sortiment.png,
+												./images/third_sortiment_2x.png
+											" />
+										<img
+											src="./images/third_sortiment.png"
+											alt="first sortiment"
+									/></picture>
+									<button>300 g</button>
+								</div>
+							</div>
+							<div class="form-data-section">
+								<div class="form-field">
+									<label class="form-label">Personal information</label>
+									<div class="personal-info-input">
+										<input type="text" name="user_name" placeholder="Name" />
+										<input
+											type="text"
+											name="user_surname"
+											placeholder="Surname"
+										/>
+									</div>
+								</div>
+								<div class="form-field">
+									<label class="form-label">Email</label>
+									<input
+										type="email"
+										name="E-mail"
+										placeholder="Enter your email"
+									/>
+								</div>
+								<div class="form-field">
+									<label class="form-label">Phone number</label>
+									<div class="form-card">
+										<input type="tel" name="phone" placeholder="Phone number" />
+										<div class="country-code">
+											<svg class="country-flag">
+												<use
+													href="./images/icons.svg/symbol-defs.svg#icon-country-flag"
+												></use>
+											</svg>
+											<span>+380</span>
+										</div>
+									</div>
+								</div>
+								<div class="form-field">
+									<label class="form-label">Card number</label>
+									<div class="form-card">
+										<input
+											type="number"
+											name="Card number"
+											placeholder="Enter card"
+										/>
+										<svg class="card-format">
+											<use
+												href="./images/icons.svg/symbol-defs.svg#icon-mastercard"
+											></use>
+										</svg>
+									</div>
+								</div>
+
+								<div class="form-field">
+									<label class="form-label">Comments</label>
+									<textarea
+										type="text"
+										name="user_message"
+										placeholder="Enter text"
+									></textarea>
+								</div>
+								<button class="submit-button" type="submit">Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="js/modal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.js"></script>
+	</body>
+</html>
